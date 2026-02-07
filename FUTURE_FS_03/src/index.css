@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Liora Restaurant Design System - Warm, Cozy & Inviting */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* Warm Cream Background */
+    --background: 39 100% 97%;
+    --foreground: 20 25% 20%;
+
+    /* Cream Cards */
+    --card: 39 70% 95%;
+    --card-foreground: 20 25% 20%;
+
+    --popover: 39 70% 95%;
+    --popover-foreground: 20 25% 20%;
+
+    /* Terracotta Primary */
+    --primary: 24 85% 42%;
+    --primary-foreground: 39 100% 97%;
+
+    /* Warm Cream Secondary */
+    --secondary: 39 50% 90%;
+    --secondary-foreground: 20 25% 25%;
+
+    /* Muted Warm Tones */
+    --muted: 30 30% 90%;
+    --muted-foreground: 20 15% 45%;
+
+    /* Burgundy Accent */
+    --accent: 0 100% 27%;
+    --accent-foreground: 39 100% 97%;
+
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 39 100% 97%;
+
+    /* Borders & Inputs */
+    --border: 30 30% 85%;
+    --input: 30 30% 85%;
+    --ring: 24 85% 42%;
+
+    --radius: 0.75rem;
+
+    /* Custom Liora Colors */
+    --terracotta: 24 85% 42%;
+    --terracotta-light: 24 75% 55%;
+    --cream: 39 100% 97%;
+    --cream-dark: 39 50% 90%;
+    --burgundy: 0 100% 27%;
+    --warm-brown: 20 25% 25%;
+    --warm-brown-light: 20 15% 45%;
+
+    /* Gradients */
+    --gradient-warm: linear-gradient(135deg, hsl(24 85% 42%), hsl(0 100% 27%));
+    --gradient-cream: linear-gradient(180deg, hsl(39 100% 97%), hsl(39 50% 90%));
+
+    /* Shadows */
+    --shadow-warm: 0 4px 20px -4px hsl(24 85% 42% / 0.25);
+    --shadow-soft: 0 2px 10px -2px hsl(20 25% 20% / 0.1);
+
+    --sidebar-background: 39 70% 95%;
+    --sidebar-foreground: 20 25% 25%;
+    --sidebar-primary: 24 85% 42%;
+    --sidebar-primary-foreground: 39 100% 97%;
+    --sidebar-accent: 39 50% 90%;
+    --sidebar-accent-foreground: 20 25% 25%;
+    --sidebar-border: 30 30% 85%;
+    --sidebar-ring: 24 85% 42%;
+  }
+
+  .dark {
+    --background: 20 25% 10%;
+    --foreground: 39 70% 95%;
+
+    --card: 20 25% 15%;
+    --card-foreground: 39 70% 95%;
+
+    --popover: 20 25% 15%;
+    --popover-foreground: 39 70% 95%;
+
+    --primary: 24 75% 55%;
+    --primary-foreground: 20 25% 10%;
+
+    --secondary: 20 20% 20%;
+    --secondary-foreground: 39 70% 95%;
+
+    --muted: 20 20% 20%;
+    --muted-foreground: 30 20% 65%;
+
+    --accent: 0 70% 45%;
+    --accent-foreground: 39 100% 97%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 39 100% 97%;
+
+    --border: 20 20% 25%;
+    --input: 20 20% 25%;
+    --ring: 24 75% 55%;
+
+    --sidebar-background: 20 25% 12%;
+    --sidebar-foreground: 39 70% 95%;
+    --sidebar-primary: 24 75% 55%;
+    --sidebar-primary-foreground: 20 25% 10%;
+    --sidebar-accent: 20 20% 18%;
+    --sidebar-accent-foreground: 39 70% 95%;
+    --sidebar-border: 20 20% 25%;
+    --sidebar-ring: 24 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-body {
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .gradient-warm {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .shadow-warm {
+    box-shadow: var(--shadow-warm);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+}
