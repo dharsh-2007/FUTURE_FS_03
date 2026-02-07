@@ -1,18 +1,29 @@
-# Restaurant Website
+# Restaurant Website – Live Demo Project
 
-This repository contains a demo restaurant website created as part of an internship assignment.
-The project focuses on building a clean and user-friendly website for a local business.
+This project is a demo restaurant website created as part of an internship live project.
+It simulates a real-world local business website with a focus on usability, design,
+and business growth.
 
-## Overview
-The website includes essential sections such as a home page, menu, about, and contact information.
-It is designed to present business details clearly and improve overall user experience.
+## Live Demo
+https://future-fs-03-kprh-chi.vercel.app/
+
+## Project Overview
+The website is designed to help a local restaurant improve its online presence by
+clearly showcasing its brand, menu, location, and contact details.
 
 ## Features
-- Simple and professional layout
-- Menu display with categorized items
-- About section describing the business
-- Contact section with address, timings, and placeholder details
-- Responsive design for different screen sizes
+- Professional home page with Chennai-based location
+- Menu section with clear food categories
+- About section to build customer trust
+- Contact section with address, timings, and demo placeholders
+- Fully responsive design for mobile and desktop
 
-## Status
-Initial version of the project. Further updates and deployment will be added later.
+## Business Value
+- Improves online visibility
+- Helps customers find the restaurant easily
+- Builds trust through clear information
+- Encourages walk-ins and customer engagement
+
+## Project Type
+Live demo project created for internship evaluation purposes.
+
